@@ -1,0 +1,15 @@
+{
+  "routes": [
+    {
+      "route": "/*",
+      "redirect": "https://www.hvnavigator.com{uri}",
+      "statusCode": 301
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "redirect": "https://www.hvnavigator.com",
+      "statusCode": 301
+    }
+  }
+}
